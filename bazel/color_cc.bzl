@@ -20,6 +20,7 @@ def color_cc_library(
     native.cc_library(
         name = name,
         copts = copts,
+        linkopts = linkopts,
         **kwargs
     )
 
@@ -31,6 +32,7 @@ def color_cc_binary(
     native.cc_binary(
         name = name,
         copts = copts,
+        linkopts = linkopts,
         **kwargs
     )
 
@@ -44,6 +46,7 @@ def color_cc_test(
     native.cc_test(
         name = name,
         copts = copts,
+        linkopts = linkopts,
         **kwargs
     )
 
